@@ -1,0 +1,45 @@
+##WEBサイトを作る準備（じゅんび）をしよう
+
+##その前に
+
+###タイピング出来るかな？
+* タイピング
+	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
+* ローマ字表
+	* http://happylilac.net/roman-hyo3.pdf
+* < → 「Shift」+「,」
+* > → 「Shift」+「.」
+* / →　「.」の右隣り（１番右下）
+
+###ウェブサイトを作るに必要なもの
+* プロのエンジニア達が使っているツールと同じものを用意
+	* ブラウザ
+		* WEBサイトを閲覧できるツール
+			* 世界中のWEBサイトが見れる
+		* Google Chrome
+		* <a href="https://www.google.co.jp/chrome/browser/desktop/index.html" target="_blank">https://www.google.co.jp/chrome/browser/desktop/index.html<a>
+	* テキストエディタ
+		* プログラミングをするために文字を書き、保存するもの
+			* テキストファイルを作成、編集、保存するためのソフトウェア
+		* Atom
+		* <a href="http://aoplanning.com/ide/atom-install.html" target="_blank">http://aoplanning.com/ide/atom-install.html<a>
+
+#####Atomの設定をしよう
+* メニューバーを英語から日本語に
+	* Windowsの人
+		* 「File」「Settings」を選択
+		* 「+Install」をクリック
+		* 「japanese-menu」と検索
+		* 「japanese-menu」と[japanese-wrap]をインストール
+	* Macの人
+		* 「Atom」「Preferences」を選択
+		* 「+Install」をクリック
+		* 「japanese-menu」と検索
+		* 「japanese-menu」と[japanese-wrap]をインストール
+
+---
+
+###既存サイトを観察
+* 実際のWEBサイトを見てみる
+	* <a href="http://www.yahoo.co.jp" target="_blank">http://www.yahoo.co.jp</a>
+	* デベロッパーツール
