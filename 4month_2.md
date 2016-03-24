@@ -11,6 +11,8 @@
 * > → 「Shift」+「.」
 * / →　「.」の右隣り（１番右下）
 
+---
+
 ###ウェブサイトを作るに必要なもの
 * プロのエンジニア達が使っているツールと同じものを用意
 	* ブラウザ
@@ -42,4 +44,13 @@
 ###既存サイトを観察
 * 実際のWEBサイトを見てみる
 	* <a href="http://www.yahoo.co.jp" target="_blank">http://www.yahoo.co.jp</a>
+	* ソースコードを表示
+		* ブラウザに付いているソースコードを表示出来るツール
+		* 呼び出しコマンド
+			* windows - 「Control」+「Option」+「U」
+			* Mac - 「Command」+「Option」+「U」
 	* デベロッパーツール
+		* ブラウザに付いているソースコードを検証出来るツール
+		* 呼び出しコマンド
+			* windows - 「Control」+「Option」+「C」
+			* Mac - 「Command」+「Option」+「C」
