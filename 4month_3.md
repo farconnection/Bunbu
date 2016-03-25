@@ -150,11 +150,12 @@ border: 5px dotted red;
 	* 太さを示す
 
 * 線の形状
-	* solid - 1本線
-	* double - 2本線で表示されます。
-	* dashed - 破線
-	* dotted - 点線で表示されます。
+	* solid（ソリッド） - 1本線で表示されます。
+	* double（ダブル） - 2本線で表示されます。
+	* dashed（ダッシュ）- 破線で表示されます。
+	* dotted（ドット） - 点線で表示されます。
 
+* 参考：<a href="http://www.htmq.com/style/border.shtml" target="_blank">http://www.htmq.com/style/border.shtml</a>
 
 ##### text-align - 文字を寄せよう
 ```
@@ -208,17 +209,23 @@ text-align: right;
 
 #####それぞれのHTML要素に名前を付けてあげる
 * HTMLの要素ごとに名前を付けてあげることで名前ごとでCSSを指定出来る
-	* id
+	* id - アイディー
+		* 「#」 - CSSではシャープで表現
 		* 1つのHTML内で1つしか付けれない名前
-	* class
+	* class - クラス
+		* 「.」 - CSSではドットで表現
 		* 1つのHTML内で複数使える名前
 
 ```html
 使い方
+<h1 id="title">タイトルにIDをつけました</h1>
 <p class="red">この文字を赤色にしたい</p>
 <p class="blue">この文字を青色にしたい</p>
 
 <style>
+#title {
+	color: orange;
+}
 .red {
 	color: red;
 }
@@ -240,12 +247,16 @@ text-align: right;
 	<!-- ここからが本文 -->
 	<body>
 
+		<h1 id="title">タイトルにIDをつけました</h1>
 		<p class="red">この文字を赤色にしたい</p>
 		<p class="blue">この文字を青色にしたい</p>
 
 	</body>
 
 	<style>
+		#title {
+			color: orange;
+		}
 		.red {
 			color: red;
 		}
