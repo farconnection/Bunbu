@@ -47,10 +47,10 @@
 	* ソースコードを表示
 		* ブラウザに付いているソースコードを表示出来るツール
 		* 呼び出しコマンド
-			* windows - 「Control」+「Option」+「U」
+			* windows - 「Control」+「U」
 			* Mac - 「Command」+「Option」+「U」
 	* デベロッパーツール
 		* ブラウザに付いているソースコードを検証出来るツール
 		* 呼び出しコマンド
-			* windows - 「Control」+「Option」+「C」
+			* windows - 「F12」
 			* Mac - 「Command」+「Option」+「C」

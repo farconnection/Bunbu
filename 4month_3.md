@@ -25,8 +25,8 @@
 	<!-- ここからが本文 -->
 	<body>
 
-		<h1>ページのタイトルが入る</h1>
-		<p>ここにはテキストが入る</p>
+		<h1>ページのタイトルが入る</h1> // 「h1要素」もしくは「h1タグ」
+		<p>ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
 
 	</body>
 
@@ -44,6 +44,35 @@
 
 
 ####CSSを書いて装飾してみよう
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<h1>ページのタイトルが入る</h1>
+		<p>ここには赤文字のテキストが入る</p>
+
+	</body>
+
+	<!-- ここにcss(装飾するコード)を書いていく -->
+	<style>
+		p {
+			color: red;
+		}
+	</style>
+
+</html>
+```
+
 ```
 プロパティ名: 変化させたい値;
 color: blue;
@@ -51,6 +80,16 @@ color: blue;
 【読み方】 
 : →「コロン」
 ; →「セミコロン」
+
+#実際の使われ方
+HTMLの要素名 {
+	プロパティ名: 変化させたい値;
+}
+↓
+p {
+	color: blue;
+}
+// HTML内のp要素が青文字になる
 ```
 
 ##### color - 文字の色を変える
@@ -78,7 +117,21 @@ color: blue;
 background: blue;
 ↓
 背景色: 青にする;
+
+#実際の使われ方
+p {
+	background: blue;
+}
 ```
+
+#####複数のプロパティを使う
+```
+p {
+	color: red;
+	background: blue;
+}
+```
+
 
 ##### border - 枠を付けよう
 ```
@@ -86,6 +139,10 @@ background: blue;
 border: 1px solid blue;
 ↓
 枠線: 1ピクセルの1本線を青色にする;
+
+border: 5px dotted red;
+↓
+枠線: 5ピクセルの点線を赤色にする;
 ```
 
 * px - ピクセル単位
@@ -98,9 +155,104 @@ border: 1px solid blue;
 	* dashed - 破線
 	* dotted - 点線で表示されます。
 
+
 ##### text-align - 文字を寄せよう
+```
+プロパティ名（特性・特質）: 変化させたい値;
+text-align: center;
+↓
+文字の寄せ方を: 中央に寄せる;
+
+text-align: right;
+↓
+文字の寄せ方を: 右に寄せる;
+```
+
+* 値の種類
+	* left - 左に寄せる
+	* right - 右に寄せる
+	* center - 中央に寄せる
 
 
 ##### 選択した要素が全部変わってしまう
-		* id
-		* class
+```
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p>この文字を赤色にしたい</p>
+		<p>この文字を青色にしたい</p>
+
+	</body>
+
+	<style>
+		p {
+			color: red;
+		}
+		p {
+			color: blue;
+		}
+	</style>
+
+</html>
+```
+
+↑どちらも同じ色になってしまう
+
+#####それぞれのHTML要素に名前を付けてあげる
+* HTMLの要素ごとに名前を付けてあげることで名前ごとでCSSを指定出来る
+	* id
+		* 1つのHTML内で1つしか付けれない名前
+	* class
+		* 1つのHTML内で複数使える名前
+
+```html
+使い方
+<p class="red">この文字を赤色にしたい</p>
+<p class="blue">この文字を青色にしたい</p>
+
+<style>
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+</style>
+
+
+実際の例
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="red">この文字を赤色にしたい</p>
+		<p class="blue">この文字を青色にしたい</p>
+
+	</body>
+
+	<style>
+		.red {
+			color: red;
+		}
+		.blue {
+			color: blue;
+		}
+	</style>
+
+</html>
+```
