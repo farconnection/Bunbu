@@ -49,12 +49,117 @@
 		* contain
 		* cover
 
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+
+		<style>
+
+		.bg_black {
+			background: red;
+		}
+
+		</style>
+
+
+	</body>
+
+</html>
+```
 
 ####隙間を作ろう
 * margin - マージン
+	* 要素の外側の余白
 * padding - パディング
+	* 要素の内側の余白
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+
+		<style>
+
+		.bg_black {
+			background: red;
+			margin: 10px;
+			padding: 10px;
+		}
+		.bg_black {
+			background: blue;
+			padding: 10px;
+		}
+
+		</style>
+
+
+	</body>
+
+</html>
+```
+
 
 
 ####横幅と高さを指定しよう
 * width - ウィズ
+	* 横幅を変える
 * height - ヘイト
+	* 高さを変える
+
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+
+		<style>
+
+		.bg_black {
+			background: red;
+			width: 100px;
+		}
+		.bg_black {
+			background: blue;
+			height: 100px;
+		}
+
+		</style>
+
+
+	</body>
+
+</html>
+```

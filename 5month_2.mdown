@@ -1,0 +1,90 @@
+####HTMLとCSSを分けよう
+* フォルダ分け（style.css, images）
+	* HTMLのコード量が多くなるため、HTMLとCSSとでそれぞれファイルを分ける
+	* <link href="（cssファイル名）" rel="stylesheet" type="text/css">
+		* cssがstyle.cssの場合
+		* <link href="style.css" rel="stylesheet" type="text/css">
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+
+	</body>
+
+</html>
+```
+
+```css
+style.css
+
+.bg_black {
+	background: red;
+	width: 100px;
+}
+.bg_black {
+	background: blue;
+	height: 100px;
+}
+
+```
+
+
+####フォントをより装飾しよう
+* font-family
+	* フォントの種類 
+* font-size
+	* フォントの大きさ
+* font-weight
+	* フォントの太さ
+* text-shadow
+	* フォントに影
+	* text-shadow: 横軸 縦軸 ぼかし具合 ぼかす色;
+	* text-shadow: 1px 1px 10px #000;
+
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+
+	</body>
+
+</html>
+```
+
+```css
+style.css
+
+.bg_black {
+	font-family: 20px;
+	font-size: 20px;
+	font-weight: 20px;
+	text-shadow: 1px 1px 10px #000;
+}
+
+```

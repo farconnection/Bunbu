@@ -107,6 +107,8 @@
 		* 0 auto
 	* font-family
 		* フォントの種類 
+	* font-size
+	* font-weight
 	* text-shadow
 
 
@@ -132,8 +134,7 @@
 	* span
 	* ブロック要素
 * CSS
-	* 横並び
-		* float
+	* 簡単な横並び
 		* display
 
 
@@ -142,6 +143,11 @@
 	* aタグ
 			* ページ遷移・移動
 	* table
+	* float
+		* left - 左寄せ
+		* right - 左寄せ
+	* 参照：<a href="http://www.htmq.com/style/float.shtml">http://www.htmq.com/style/float.shtml</a>
+
 
 ####3週目
 * HTML

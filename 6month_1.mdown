@@ -1,0 +1,153 @@
+####リスト要素を使おう
+
+* ul（ユーエル）、ol（オーエル） - 
+	* li（エルアイ） - li要素
+	* リストタイプの種類
+		* disc（ディスク） - 黒丸
+		* circle（サークル） - 白丸
+		* square（スクエア） - 黒四角形
+		* lower-roman（アッパーロマン） - 小文字のローマ数字
+			* lower - ？
+		* upper-roman（アッパーロマン） - 小文字のローマ数字
+			* upper - ？
+		* decimal（デサイマル） - 数字
+
+
+```
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<ul>
+			<li>リスト１</li>
+			<li>リスト２</li>
+			<li>リスト３</li>
+			<li>リスト４</li>
+			<li>リスト５</li>
+			<li>リスト６</li>
+			<li>リスト７</li>
+			<li>リスト８</li>
+		</ul>
+
+	</body>
+
+	<style>
+		ul {
+			list-style-type: circle;
+		}
+	</style>
+
+</html>
+```
+
+
+* 参照： <a href="http://www.htmq.com/style/list-style.shtml" target="_blank">http://www.htmq.com/style/list-style.shtml</a>
+	* list-style-type
+		* <a href="http://www.htmq.com/style/list-style-type.shtml" target="_blank">http://www.htmq.com/style/list-style-type.shtml</a>
+
+
+####要素を横並びにしよう
+
+#####その前にブロック要素とインライン要素の説明
+
+* ブロック要素
+	* 文書の骨組み
+	* 要素の幅が100%
+	* <div>, <h1>~<h6>, <p>
+* インライン要素
+	* 行の中の文字に意味を持たせることが出来る
+	* 要素の幅が要素の中身分の幅
+		* 横並びにすることが出来る性質を持っている
+	* <img>, <span>
+
+
+```
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="text1"><span class="red">赤字</span>にしたり、<span class="bold">太字</span>にしたり出来るよ</p>
+
+		<span class="text2">インライン要素１</span>
+		<span>インライン要素２</span>
+		<span>インライン要素３</span>
+
+	</body>
+
+	<style>
+		//text1内の要素
+		.text1 {
+			background: gray;
+		}
+		.red {
+			color: red;
+		}
+		.bold {
+			font-weight: bold;
+		}
+
+		//text2内の要素
+		.text2 {
+			color: white;
+			background: blue;
+		}
+		.text2 {
+			list-style-type: circle;
+		}
+	</style>
+
+</html>
+```
+
+* 参照： <a href="http://www.htmq.com/htmlkihon/005.shtml" target="_blank">http://www.htmq.com/htmlkihon/005.shtml</a>
+
+
+#####横並びにしてみよう
+
+* display
+
+
+```
+<!DOCTYPE html>　
+<html>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="text1"><span class="red">赤字</span>にしたり、<span class="bold">太字</span>にしたり出来るよ</p>
+		<p class="text1"><span class="red">赤字</span>にしたり、<span class="bold">太字</span>にしたり出来るよ</p>
+		<p class="text1"><span class="red">赤字</span>にしたり、<span class="bold">太字</span>にしたり出来るよ</p>
+
+	</body>
+
+	<style>
+		//text1内の要素
+		.text1 {
+			display: inline-block; //横並びにしてみる
+			background: gray;
+		}
+		.red {
+			color: red;
+		}
+		.bold {
+			font-weight: bold;
+		}
+	</style>
+
+</html>
+```
+
