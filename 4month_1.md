@@ -11,12 +11,17 @@
 * 松田済（まつだとおる）
 	* 
 
+<br>
+<br>
 
 #####やってること
 * 企業からの依頼
 	* WEBサイト制作やiPhoneアプリ開発等
 * 全国最大のプログラミングコミュニティTech Logicsの運営
 	* <a href="http://techlogics.link" target="_blanl">http://techlogics.link</a>
+
+
+---
 
 
 ###授業の進め方
