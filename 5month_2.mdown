@@ -41,6 +41,9 @@ style.css
 
 ```
 
+<br>
+---
+<br>
 
 ####フォントをより装飾しよう
 * font-family

@@ -53,6 +53,11 @@
 		* <a href="http://www.htmq.com/style/list-style-type.shtml" target="_blank">http://www.htmq.com/style/list-style-type.shtml</a>
 
 
+<br>
+---
+<br>
+
+
 ####要素を横並びにしよう
 
 #####その前にブロック要素とインライン要素の説明

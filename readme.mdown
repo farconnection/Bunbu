@@ -98,7 +98,7 @@
 	* font-size
 	* font-weight
 	* text-shadow
-
+	* line-height
 
 
 ####3週目
@@ -133,12 +133,15 @@
 	* float
 		* left - 左寄せ
 		* right - 左寄せ
-	* 参照：<a href="http://www.htmq.com/style/float.shtml">http://www.htmq.com/style/float.shtml</a>
 
 
 ####3週目
-* HTML
-	* 
+* CSS
+	* oveflow
+	* position
+	* box-shadow
+	* opacity
+	* border-radius
 
 
 ------
