@@ -1,3 +1,5 @@
+#4月15日（金曜日）
+
 ##WEBサイトを作る準備（じゅんび）をしよう
 
 ##その前に
@@ -7,9 +9,9 @@
 	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
 * ローマ字表
 	* http://happylilac.net/roman-hyo3.pdf
-* < → 「Shift」+「,」
-* > → 「Shift」+「.」
-* / →　「.」の右隣り（１番右下）
+* 「<」 → 「Shift」+「,」
+* 「>」 → 「Shift」+「.」
+* 「/」 →　「.」の右隣り（１番右下）
 
 ---
 
