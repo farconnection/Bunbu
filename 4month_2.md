@@ -28,6 +28,14 @@
 		* Atom
 		* <a href="http://aoplanning.com/ide/atom-install.html" target="_blank">http://aoplanning.com/ide/atom-install.html<a>
 
+##このサイトをお気に入りに登録
+* https://github.com/farconnection/Bunbu
+	* 画面右の３本線アイコンをクリック
+	* 「設定」をクリック
+	* 「表示」→「ブックマークバーを常に表示」
+		* ブックマークバーが表示されるのを確認
+	* 「ページを追加」をクリック
+
 #####Atomの設定をしよう
 * メニューバーを英語から日本語に
 	* Windowsの人
