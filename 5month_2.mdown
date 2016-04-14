@@ -1,3 +1,129 @@
+#5月20日（金曜日）
+
+####おさらい
+* タイピング
+	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
+* 「border」プロパティは何をするプロパティだったっけ？
+* 「px」ってなんだっけ？
+* 「text-align」プロパティは何をするプロパティだったっけ？
+* 「id」は1つのHTML内でいくつ使える？
+* 「class」は1つのHTML内でいくつ使える？
+
+
+#### margin,padding - 隙間を作ろう
+
+【読み方】 
+「margin」 → 「マージン」
+「padding」 → 「パディング」
+
+【意味】 
+「margin」→ 要素の外側の余白
+「padding」→ 要素の内側の余白
+
+* 参考：<a href="http://www.htmq.com/style/margin.shtml" target="_blank">http://www.htmq.com/style/margin.shtml</a>
+* 参考：<a href="http://www.htmq.com/style/padding.shtml" target="_blank">http://www.htmq.com/style/padding.shtml</a>
+
+
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">黒いボックス</p>
+		<p class="bg_blue">青いボックス</p>
+		<p class="bg_red">赤いボックス</p>
+
+	</body>
+
+	<style>
+		.bg_black {
+			background-color: black;
+			margin: 10px;
+		}
+		.bg_blue {
+			background-color: blue;
+			padding: 10px;
+		}
+		.bg_red {
+			background-color: red;
+			padding: 10px;
+			margin: 10px;
+		}
+	</style>
+
+</html>
+```
+
+
+<br>
+---
+<br>
+
+
+#### width,height - 横幅と高さを指定しよう
+
+【読み方】 
+「width」 → 「ウィズ」
+「height」 → 「ハイト」
+
+【意味】 
+「width」→ 横幅
+「height」→ 高さ
+
+* 参考：<a href="http://www.htmq.com/style/width.shtml" target="_blank">http://www.htmq.com/style/width.shtml</a>
+* 参考：<a href="http://www.htmq.com/style/height.shtml" target="_blank">http://www.htmq.com/style/height.shtml</a>
+
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p class="bg_black">黒いボックス</p>
+		<p class="bg_blue">青いボックス</p>
+		<p class="bg_red">赤いボックス</p>
+
+	</body>
+
+	<style>
+
+		.bg_black {
+			background: block;
+			width: 100px;
+		}
+		.bg_blue {
+			background: blue;
+			height: 100px;
+		}
+		.bg_red {
+			background: red;
+			width: 100px;
+			height: 100px;
+		}
+
+	</style>
+
+</html>
+```
+
+
 ####HTMLとCSSを分けよう
 * フォルダ分け（style.css, images）
 	* HTMLのコード量が多くなるため、HTMLとCSSとでそれぞれファイルを分ける
@@ -5,7 +131,8 @@
 		* cssがstyle.cssの場合
 		* <link href="style.css" rel="stylesheet" type="text/css">
 
-```html
+```
+html
 <!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html>
@@ -19,15 +146,16 @@
 	<!-- ここからが本文 -->
 	<body>
 
-		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
-		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_black">ここにはテキストが入る</p>
+		<p class="bg_blue">ここにはテキストが入る</p>
 
 	</body>
 
 </html>
 ```
 
-```css
+```
+css
 style.css
 
 .bg_black {
@@ -41,24 +169,36 @@ style.css
 
 ```
 
+## <style></style>タグがいらない
+
 <br>
 ---
 <br>
 
 ####フォントをより装飾しよう
-* font-family
-	* フォントの種類 
 * font-size
 	* フォントの大きさ
+* font-family
+	* フォントの種類 
+		* sans-serif - ゴシック系のフォント
+		* serif - 明朝系のフォント
+		* cursive - 筆記体・草書体のフォント
+		* fantasy - 装飾的なフォント
+		* monospace - 等幅フォント
 * font-weight
 	* フォントの太さ
+		* normal - 標準の太さ
+		* bold - 太字
+		* lighter - 相対的に一段階細くする。
+		* bolder - 相対的に一段階太くする。
 * text-shadow
-	* フォントに影
+	* フォントに影をつける
 	* text-shadow: 横軸 縦軸 ぼかし具合 ぼかす色;
 	* text-shadow: 1px 1px 10px #000;
 
 
-```html
+```
+html
 <!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html>
@@ -72,8 +212,8 @@ style.css
 	<!-- ここからが本文 -->
 	<body>
 
-		<p class="bg_black">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
-		<p class="bg_blue">ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		<p class="bg_black">ここにはテキストが入る</p>
+		<p class="bg_blue">ここにはテキストが入る</p>
 
 	</body>
 

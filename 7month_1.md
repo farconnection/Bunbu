@@ -1,15 +1,15 @@
-###ボックスで遊ぼう！vol.1
+###ボックスで遊ぼう！vol.2
 
-####ボックスからはみ出しちゃったらどうなるの？
+####
 
-* overflow（オーバーフロー）
-	* ボックスの範囲内（はんいない）に入りきらない場合に、はみ出た部分の表示の仕方を指定する。
+* opacity
+	* 
 		* visible - ボックスからはみ出して表示される。これが初期値です。尚、Internet Explorerでは、内容がはみ出すのではなく、ボックスの方が内容に合わせて広がります。
 		* scroll - 入りきらない内容はスクロールして見られるようになります。
 		* hidden - はみ出た部分は表示されません。
 		* auto - ブラウザに依存（いぞん）します（一般的にはスクロールして見られるようになります）。
 
-* 参照：<a href="http://www.htmq.com/style/overflow.shtml"></a>
+* 参照：<a href=""</a>
 
 ```
 <!DOCTYPE html>　
@@ -18,18 +18,10 @@
 	<!-- ここからが本文 -->
 	<body>
 
-		<div class="box1">
-			<p>visiblevisiblevisible</p>
-		</div>
-		<div class="box2">
-			<p>scrollscrollscrollscroll</p>
-		</div>
-		<div class="box3">
-			<p>hiddenhiddenhiddenhidden</p>
-		</div>
-		<div class="box4">
-			<p>autoautoautoautoautoauto</p>
-		</div>
+		<div class="box1">box1</div>
+		<div class="box2">box2</div>
+		<div class="box3">box3</div>
+		<div class="box4">box4</div>
 
 	</body>
 
@@ -43,20 +35,20 @@
 			margin: 10px;
 		}
 		.box1 {
-			overflow: visible;
 			background: red;
+			opacity: 0.5;
 		}
 		.box2 {
-			overflow: scroll;
-			background: blue;
+			background: red;
+			opacity: 0.2
 		}
 		.box3 {
-			overflow: hidden;
-			background: greeen;
+			background: red;
+			opacity: 1;
 		}
 		.box4 {
-			overflow: auto;
-			background: orange;
+			background: red;
+			opacity: 0;
 		}
 	</style>
 
@@ -79,7 +71,7 @@
 		* position - 絶対位置への配置となる。親ボックスにpositionプロパティのstatic以外の値が指定されている場合には、親ボックスの左上が基準位置となる。親ボックスにpositionプロパティのstatic以外の値が指定されていない場合には、ウィンドウ全体の左上が基準位置となる。
 		* fixed - 絶対位置への配置となるのはabsoluteと同じだが、スクロールしても位置が固定されたままとなる。
 
-* 参照：<a href="http://www.htmq.com/style/position.shtml"></a>
+* 参照：<a href="http://www.htmq.com/style/position.shtml</a>
 
 ```
 <!DOCTYPE html>　
@@ -153,7 +145,7 @@
 * box-shadow（ボックスシャドウ）
 	* ボックスに影をつける。
 
-* 参照：<a href="http://www.htmq.com/css3/box-shadow.shtml"></a>
+* 参照：<a href="http://www.htmq.com/css3/box-shadow.shtml</a>
 
 ```
 <!DOCTYPE html>　
@@ -167,10 +159,10 @@
 	<!-- ここからが本文 -->
 	<body>
 
-		<div class="box1">box-shadow: 10px 10px で指定</div>
-		<div class="box2">box-shadow: 10px 10px 10px で指定</div>
-		<div class="box3">box-shadow: 10px 10px 10px 10px で指定</div>
-		<div class="box4">box-shadow: 10px 10px 10px 10px inset で指定</div>
+		<div class="box1">box-shadow: 10px 10px</div>
+		<div class="box2">box-shadow: 10px 10px 10px</div>
+		<div class="box3">box-shadow: 10px 10px 10px 10px</div>
+		<div class="box4">box-shadow: 10px 10px 10px 10px inset</div>
 
 	</body>
 

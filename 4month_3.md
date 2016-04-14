@@ -1,19 +1,34 @@
 #4月22日（金曜日）
 
+####おさらい
+* ローマ字表
+	* http://happylilac.net/roman-hyo3.pdf
+* ホームポジション
+	* http://typing.twi1.me/training/basic
+* タイピング
+	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
+
+
 ##実際に作ってみよう
 
 ####必要な知識
-* htmlファイル
+* HTMLファイル
 	* これがホームページ等になり公開される
 	* WEBサイトの基盤となる枠組みのようなもの
-* css
-	* htmlに色をつけたり、文字を大きくしたり小さくしたり装飾できるもの
+	* 「<」「>」で囲まれる部分を「要素」もしくは、「タグ」と呼ぶ
+	* HTMLは要素（タグ）で作っていく
+	* 基本的に要素は（タグ）は小文字で書く
+	* 基本的に開始タグ「<>」と閉じタグ</>を書く
+
+* CSS
+	* HTMLに色をつけたり、文字を大きくしたり小さくしたり装飾できるもの
 
 ###作ってみよう
 
 ####index.html作成 - サイトの入り口となるファイルを作成
 #####html要素
-```html
+```
+html
 <!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html>
@@ -26,9 +41,13 @@
 	<!-- ここからが本文 -->
 	<body>
 
-		<h1>ページのタイトルが入る</h1> // 「h1要素」もしくは「h1タグ」
+		<h1>ページの見出し（タイトル）が入る</h1> // 「h1要素」もしくは「h1タグ」
 		<p>ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
-
+		
+		// 1行コメントアウト
+		<!-- 
+		複数行コメントアウト	
+		-->
 	</body>
 
 </html>
@@ -37,21 +56,26 @@
 * HTML構造
 	* DOCTYPE
 		* このファイルの宣言をする
-	* head - 頭（ヘッド）のことでこのページの情報などを入れる
+	* <head> - 頭（ヘッド）のことでこのページの情報などを入れる
 		* 画面には表示はされない（目に見えない）
-	* body - 体（ボディ）のことで実際に表示したい（見せたい）ものを書く
+	* <body> - 体（ボディ）のことで実際に表示したい（見せたい）ものを書く
 		* 画面に表示される（目に見える）
 	* コメントアウト - 意図的に表示しないようにする
-		* // コメントアウト
-		* <!-- コメントアウト -->
+		* // 1行のコメントアウト
+		* <!-- 複数行のコメントアウト -->
 * テキスト
-	* h - タイトル
-		* h1 ~ h6 まである
-		* 一般的には最高h4ぐらいまでしか使われない
-	* p - タイトルまでにはいかないテキスト
+	* <title> - ページのタイトル情報を書く
+		* 一番上に表示される
+	* <h1> - 見出し（タイトル）
+		* <h1> ~ <h6> まである
+		* 数字が小さいほど文字が大きくなる
+		* <h1>が一番大きくて<h6>が一番小さい
+	* <p> - 見出しまでにはいかないテキスト
 
 
 ####CSSを書いて装飾してみよう
+
+* <style></style>タグで囲まれた部分にCSSを書く
 
 ```
 html
@@ -67,12 +91,12 @@ html
 	<!-- ここからが本文 -->
 	<body>
 
-		<h1>ページのタイトルが入る</h1>
+		<h1>ページの見出し（タイトル）が入る</h1>
 		<p>ここには赤文字のテキストが入る</p>
 
 	</body>
 
-	<!-- ここにcss(装飾するコード)を書いていく -->
+	<!-- ここにCSS(装飾するコード)を書いていく -->
 	<style>
 		p {
 			color: red;
@@ -83,12 +107,12 @@ html
 ```
 
 ```
-プロパティ名: 変化させたい値;
+プロパティ名（特性・特質）: 変化させたい値;
 color: blue;
 
 【読み方】 
-: →「コロン」
-; →「セミコロン」
+「:」 → 「コロン」
+「;」 → 「セミコロン」
 
 #実際の使われ方
 HTMLの要素名 {
@@ -102,6 +126,14 @@ p {
 ```
 
 ##### color - 文字の色を変える
+【読み方】 
+「color」 → 「カラー」
+
+【意味】 
+* 文字の色
+
+* 参考：<a href="http://www.htmq.com/style/color.shtml" target="_blank">http://www.htmq.com/style/color.shtml</a>
+
 ```
 プロパティ名（特性・特質）: 変化させたい値;
 color: blue;
@@ -112,80 +144,38 @@ color: blue;
 * カラーコード
 	* プログラムで色を宣言するためのコード（それぞれの色にそれぞれのコードがついている）
 		* 黒 - black もしくは #000000
+		* 白 - white もしくは #FFFFFF
 		* 赤 - red もしくは #FF0000
+		* 緑 - green もしくは #00FF00
 		* 青 - blue もしくは #0000FF
-		* オレンジ - orange もしくは #FFA500
-		* 白 - white もしくは #fff
 		* 色んな色を指定できる
-			* <a href="http://hogehoge.tk/webdev/color/" target="_blank">http://hogehoge.tk/webdev/color/</a>
+			* 参考：<a href="http://hogehoge.tk/webdev/color/" target="_blank">http://hogehoge.tk/webdev/color/</a>
 
+##### background-color - 背景色を変えよう
 
-##### background - 背景色を変えよう
+【読み方】 
+「background-color」 → 「バックグラウンドカラー」
+
+【意味】 
+* 背景色
+
+* 参考：<a href="http://www.htmq.com/style/background-color.shtml" target="_blank">http://www.htmq.com/style/background-color.shtml</a>
+
 ```
 プロパティ名（特性・特質）: 変化させたい値;
-background: blue;
+background-color: blue;
 ↓
 背景色: 青にする;
 
 #実際の使われ方
 p {
-	background: blue;
+	background-color: blue;
 }
 ```
 
-#####複数のプロパティを使う
 ```
-p {
-	color: red;
-	background: blue;
-}
-```
-
-
-##### border - 枠を付けよう
-```
-プロパティ名（特性・特質）: 変化させたい値;
-border: 1px solid blue;
-↓
-枠線: 1ピクセルの1本線を青色にする;
-
-border: 5px dotted red;
-↓
-枠線: 5ピクセルの点線を赤色にする;
-```
-
-* px - ピクセル単位
-	* 1px(イチピクセル)
-	* 太さを示す
-
-* 線の形状
-	* solid（ソリッド） - 1本線で表示されます。
-	* double（ダブル） - 2本線で表示されます。
-	* dashed（ダッシュ）- 破線で表示されます。
-	* dotted（ドット） - 点線で表示されます。
-
-* 参考：<a href="http://www.htmq.com/style/border.shtml" target="_blank">http://www.htmq.com/style/border.shtml</a>
-
-##### text-align - 文字を寄せよう
-```
-プロパティ名（特性・特質）: 変化させたい値;
-text-align: center;
-↓
-文字の寄せ方を: 中央に寄せる;
-
-text-align: right;
-↓
-文字の寄せ方を: 右に寄せる;
-```
-
-* 値の種類
-	* left - 左に寄せる
-	* right - 右に寄せる
-	* center - 中央に寄せる
-
-
-##### 選択した要素が全部変わってしまう
-```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html>
 
@@ -197,54 +187,34 @@ text-align: right;
 	<!-- ここからが本文 -->
 	<body>
 
-		<p>この文字を赤色にしたい</p>
-		<p>この文字を青色にしたい</p>
+		<p>赤い背景色</p>
 
 	</body>
 
+	<!-- ここにCSS(装飾するコード)を書いていく -->
 	<style>
 		p {
-			color: red;
-		}
-		p {
-			color: blue;
+			background-color: red;
 		}
 	</style>
 
 </html>
 ```
 
-↑どちらも同じ色になってしまう
+#####複数のプロパティを使う
 
-#####それぞれのHTML要素に名前を付けてあげる
-* HTMLの要素ごとに名前を付けてあげることで名前ごとでCSSを指定出来る
-	* id - アイディー
-		* 「#」 - CSSではシャープで表現
-		* 1つのHTML内で1つしか付けれない名前
-	* class - クラス
-		* 「.」 - CSSではドットで表現
-		* 1つのHTML内で複数使える名前
+#「color」プロパティと「background-color」プロパティを一緒に使ってみよう
 
-```html
-使い方
-<h1 id="title">タイトルにIDをつけました</h1>
-<p class="red">この文字を赤色にしたい</p>
-<p class="blue">この文字を青色にしたい</p>
-
-<style>
-#title {
-	color: orange;
-}
-.red {
+```
+p {
 	color: red;
+	background-color: blue;
 }
-.blue {
-	color: blue;
-}
-</style>
+```
 
-
-実際の例
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html>
 
@@ -256,21 +226,15 @@ text-align: right;
 	<!-- ここからが本文 -->
 	<body>
 
-		<h1 id="title">タイトルにIDをつけました</h1>
-		<p class="red">この文字を赤色にしたい</p>
-		<p class="blue">この文字を青色にしたい</p>
+		<p>赤い文字色と青い背景色</p>
 
 	</body>
 
+	<!-- ここにCSS(装飾するコード)を書いていく -->
 	<style>
-		#title {
-			color: orange;
-		}
-		.red {
+		p {
 			color: red;
-		}
-		.blue {
-			color: blue;
+			background-color: blue;
 		}
 	</style>
 
