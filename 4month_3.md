@@ -1,242 +1,86 @@
 #4月22日（金曜日）
 
-####おさらい
+####パソコン操作を覚えよう！
+* クリック操作
+	* クリックの種類
+		* 左クリック - パッドの左下を押す
+		* 右クリック - パッドの右下を押す
+		* ダブルクリック - 左クリックを素早く２回押す
+	* 基本的に「クリック」と言われたら左クリックのことを指す
+* スクロール操作
+	* 軽く二本指でパッドに触れて上下に動かしてみよう
+* 画面（ウィンドウ）操作
+	* 画面（ウィンドウ）を動かす
+		* 画面（ウィンドウ）の上部をクリックしたまま動かしてみよう
+	* 画面（ウィンドウ）の大きさを変える
+		* 1.画面（ウィンドウ）の角（左上、右上、右下、左上）にカーソルをもっていく
+		* 2.「↕」マークが出てくる︎ので動かして画面サイズを変更する
+		* 画面（ウィンドウ）の右上にあるボタン「◻︎」ボタンをクリックすると大きく（小さく）なる
+		* 画面（ウィンドウ）の上部をダブルクリックすると大きくなる
+	* 画面（ウィンドウ）をしまう/開く
+		* しまう - 画面 （ウィンドウ）の右上にある「_」ボタンをクリックする
+		* しまう/開く - 下の「e」のマーク（Internet Explorer）をクリックする（しまう/開く）
+	* 画面（ウィンドウ）を閉じる
+		* 画面（ウィンドウ）の右上にある「×」ボタンをクリックする
+
+####タイピングをできるようになろう！
 * ローマ字表
-	* http://happylilac.net/roman-hyo3.pdf
+	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
 * ホームポジション
-	* http://typing.twi1.me/training/basic
+	* <a href="http://typing.twi1.me/training/basic" target="_blank">http://typing.twi1.me/training/basic</a>
 * タイピング
-	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
+	* <a href="http://kids.nifty.com/cs/game/detail/91125000012/1.htm" target="_blank">http://kids.nifty.com/cs/game/detail/91125000012/1.htm</a>
+
+---
 
 
-##実際に作ってみよう
+###ウェブサイトを作るのに必要なもの
+* プロのエンジニア達が使っているツールと同じものを用意
+	* ブラウザ
+		* WEBサイトを閲覧（えつらん）できるツール
+			* 世界中のWEBサイトが見れる
+		* Google Chrome
+		* <a href="https://www.google.co.jp/chrome/browser/desktop/index.html" target="_blank">https://www.google.co.jp/chrome/browser/desktop/index.html<a>
+	* テキストエディタ
+		* プログラミングをするために文字を書き、保存するもの
+			* テキストファイルを作成、編集、保存するためのソフトウェア
+		* Atom
+		* <a href="http://aoplanning.com/ide/atom-install.html" target="_blank">http://aoplanning.com/ide/atom-install.html<a>
 
-####必要な知識
-* HTMLファイル
-	* これがホームページ等になり公開される
-	* WEBサイトの基盤となる枠組みのようなもの
-	* 「<」「>」で囲まれる部分を「要素」もしくは、「タグ」と呼ぶ
-	* HTMLは要素（タグ）で作っていく
-	* 基本的に要素（タグ）は小文字で書く
-	* 基本的に開始タグ「<>」と閉じタグ</>を書く
+##このサイトをお気に入りに登録
+* https://github.com/farconnection/Bunbu
+	* 画面右の３本線アイコンをクリック
+	* 「設定」をクリック
+	* 「表示」→「ブックマークバーを常に表示」
+		* ブックマークバーが表示されるのを確認
+	* 「ページを追加」をクリック
+	* お気に入りをに登録することでいつでもすぐにこのページに飛ぶことができるよ
 
-* CSS
-	* HTMLに色をつけたり、文字を大きくしたり小さくしたり装飾できるもの
+#####Atom（アトム）の設定をしよう
+* メニューバーを英語から日本語に
+	* Windowsの人
+		* 「File」「Settings」を選択
+		* 「+Install」をクリック
+		* 「japanese-menu」と検索
+		* 「japanese-menu」と[japanese-wrap]をインストール
+	* Macの人
+		* 「Atom」「Preferences」を選択
+		* 「+Install」をクリック
+		* 「japanese-menu」と検索
+		* 「japanese-menu」と[japanese-wrap]をインストール
 
-###作ってみよう
+---
 
-####index.html作成 - サイトの入り口となるファイルを作成
-#####html要素
-```
-html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<h1>ページの見出し（タイトル）が入る</h1> // 「h1要素」もしくは「h1タグ」
-		<p>ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
-		
-		// 1行コメントアウト
-		<!-- 
-		複数行コメントアウト	
-		-->
-	</body>
-
-</html>
-```
-
-* HTML構造
-	* DOCTYPE
-		* このファイルの宣言をする
-	* <head> - 頭（ヘッド）のことでこのページの情報などを入れる
-		* 画面には表示はされない（目に見えない）
-	* <body> - 体（ボディ）のことで実際に表示したい（見せたい）ものを書く
-		* 画面に表示される（目に見える）
-	* コメントアウト - 意図的に表示しないようにする
-		* // 1行のコメントアウト
-		* <!-- 複数行のコメントアウト -->
-* テキスト
-	* <title> - ページのタイトル情報を書く
-		* 一番上に表示される
-	* <h1> - 見出し（タイトル）
-		* <h1> ~ <h6> まである
-		* 数字が小さいほど文字が大きくなる
-		* <h1>が一番大きくて<h6>が一番小さい
-	* <p> - 見出しまでにはいかないテキスト
-
-
-####CSSを書いて装飾してみよう
-
-* <style></style>タグで囲まれた部分にCSSを書く
-
-```
-html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<h1>ページの見出し（タイトル）が入る</h1>
-		<p>ここには赤文字のテキストが入る</p>
-
-	</body>
-
-	<!-- ここにCSS(装飾するコード)を書いていく -->
-	<style>
-		p {
-			color: red;
-		}
-	</style>
-
-</html>
-```
-
-```
-プロパティ名（特性・特質）: 変化させたい値;
-color: blue;
-
-【読み方】 
-「:」 → 「コロン」
-「;」 → 「セミコロン」
-
-#実際の使われ方
-HTMLの要素名 {
-	プロパティ名: 変化させたい値;
-}
-↓
-p {
-	color: blue;
-}
-// HTML内のp要素が青文字になる
-```
-
-##### color - 文字の色を変える
-【読み方】 
-「color」 → 「カラー」
-
-【意味】 
-* 文字の色
-
-* 参考：<a href="http://www.htmq.com/style/color.shtml" target="_blank">http://www.htmq.com/style/color.shtml</a>
-
-```
-プロパティ名（特性・特質）: 変化させたい値;
-color: blue;
-↓
-文字の色: 青にする;
-```
-
-* カラーコード
-	* プログラムで色を宣言するためのコード（それぞれの色にそれぞれのコードがついている）
-		* 黒 - black もしくは #000000
-		* 白 - white もしくは #FFFFFF
-		* 赤 - red もしくは #FF0000
-		* 緑 - green もしくは #00FF00
-		* 青 - blue もしくは #0000FF
-		* 色んな色を指定できる
-			* 参考：<a href="http://hogehoge.tk/webdev/color/" target="_blank">http://hogehoge.tk/webdev/color/</a>
-
-##### background-color - 背景色を変えよう
-
-【読み方】 
-「background-color」 → 「バックグラウンドカラー」
-
-【意味】 
-* 背景色
-
-* 参考：<a href="http://www.htmq.com/style/background-color.shtml" target="_blank">http://www.htmq.com/style/background-color.shtml</a>
-
-```
-プロパティ名（特性・特質）: 変化させたい値;
-background-color: blue;
-↓
-背景色: 青にする;
-
-#実際の使われ方
-p {
-	background-color: blue;
-}
-```
-
-```
-html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<p>赤い背景色</p>
-
-	</body>
-
-	<!-- ここにCSS(装飾するコード)を書いていく -->
-	<style>
-		p {
-			background-color: red;
-		}
-	</style>
-
-</html>
-```
-
-#####複数のプロパティを使う
-
-#「color」プロパティと「background-color」プロパティを一緒に使ってみよう
-
-```
-p {
-	color: red;
-	background-color: blue;
-}
-```
-
-```
-html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<p>赤い文字色と青い背景色</p>
-
-	</body>
-
-	<!-- ここにCSS(装飾するコード)を書いていく -->
-	<style>
-		p {
-			color: red;
-			background-color: blue;
-		}
-	</style>
-
-</html>
-```
+###既存（きぞん）サイトを観察
+* 実際のWEBサイトを見てみる
+	* <a href="http://www.yahoo.co.jp" target="_blank">http://www.yahoo.co.jp</a>
+	* ソースコードを表示
+		* ブラウザに付いているソースコードを表示出来るツール
+		* 呼び出しコマンド
+			* windows - 「Control」+「U」
+			* Mac - 「Command」+「Option」+「U」
+	* デベロッパーツール
+		* ブラウザに付いているソースコードを検証出来るツール
+		* 呼び出しコマンド
+			* windows - 「F12」
+			* Mac - 「Command」+「Option」+「C」

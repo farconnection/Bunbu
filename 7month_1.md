@@ -1,13 +1,22 @@
+####タイピングをできるようになろう！
+* ローマ字表
+	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
+* ホームポジション
+	* <a href="http://typing.twi1.me/training/basic" target="_blank">http://typing.twi1.me/training/basic</a>
+* タイピング
+	* <a href="http://kids.nifty.com/cs/game/detail/91125000012/1.htm" target="_blank">http://kids.nifty.com/cs/game/detail/91125000012/1.htm</a>
+
 ###ボックスで遊ぼう！vol.2
 
 ####
 
 * opacity
-	* 
-		* visible - ボックスからはみ出して表示される。これが初期値です。尚、Internet Explorerでは、内容がはみ出すのではなく、ボックスの方が内容に合わせて広がります。
-		* scroll - 入りきらない内容はスクロールして見られるようになります。
-		* hidden - はみ出た部分は表示されません。
-		* auto - ブラウザに依存（いぞん）します（一般的にはスクロールして見られるようになります）。
+
+* position
+	* visible - ボックスからはみ出して表示される。これが初期値です。尚、Internet Explorerでは、内容がはみ出すのではなく、ボックスの方が内容に合わせて広がります。
+	* scroll - 入りきらない内容はスクロールして見られるようになります。
+	* hidden - はみ出た部分は表示されません。
+	* auto - ブラウザに依存（いぞん）します（一般的にはスクロールして見られるようになります）。
 
 * 参照：<a href=""</a>
 

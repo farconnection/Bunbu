@@ -1,17 +1,244 @@
 #5月13日（金曜日）
 
-####おさらい
+####タイピングをできるようになろう！
+* ローマ字表
+	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
 * ホームポジション
-	* http://typing.twi1.me/training/basic
+	* <a href="http://typing.twi1.me/training/basic" target="_blank">http://typing.twi1.me/training/basic</a>
 * タイピング
-	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
-* 「<」と「>」で囲まれたものをなんと呼ぶ？
-* CSSは何タグの中で書く？
-* なんて読む？
-	* 「:」→「◯◯◯」
-	* 「;」→「◯◯◯◯◯」
-* 「color」プロパティは何をするプロパティだったっけ？
-* 「background-color」プロパティは何をするプロパティだったっけ？
+	* <a href="http://kids.nifty.com/cs/game/detail/91125000012/1.htm" target="_blank">http://kids.nifty.com/cs/game/detail/91125000012/1.htm</a>
+
+##実際に作ってみよう
+
+####必要な知識
+* HTMLファイル
+	* これがホームページ等になり公開される
+	* WEBサイトの基盤となる枠組みのようなもの
+	* 「<」「>」で囲まれる部分を「要素」もしくは、「タグ」と呼ぶ
+	* HTMLは要素（タグ）で作っていく
+	* 基本的に要素（タグ）は小文字で書く
+	* 基本的に開始タグ「<>」と閉じタグ</>を書く
+
+* CSS
+	* HTMLに色をつけたり、文字を大きくしたり小さくしたり装飾できるもの
+
+###作ってみよう
+
+####index.html作成 - サイトの入り口となるファイルを作成
+#####html要素
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<h1>ページの見出し（タイトル）が入る</h1> // 「h1要素」もしくは「h1タグ」
+		<p>ここにはテキストが入る</p>　// 「p要素」もしくは「pタグ」
+		
+		// 1行のコメントアウト
+		<!-- 
+		複数行のコメントアウト	
+		-->
+	</body>
+
+</html>
+```
+
+* HTML構造
+	* DOCTYPE
+		* このファイルの宣言をする
+	* <head> - 頭（ヘッド）のことでこのページの情報などを入れる
+		* 画面には表示はされない（目に見えない）
+	* <body> - 体（ボディ）のことで実際に表示したい（見せたい）ものを書く
+		* 画面に表示される（目に見える）
+	* コメントアウト - 意図的に表示しないようにする
+		* // 1行のコメントアウト
+		* <!-- 複数行のコメントアウト -->
+* テキスト
+	* <title> - ページのタイトル情報を書く
+		* 画面（ウィンドウ）の一番上に表示される
+	* <h1> - 見出し（タイトル）
+		* <h1> ~ <h6> まである
+		* 数字が小さいほど文字が大きくなる
+		* <h1>が一番大きくて<h6>が一番小さい
+	* <p> - 見出しまでにはいかないテキスト
+
+
+####CSSを書いて装飾してみよう
+
+* <style></style>タグで囲まれた部分にCSSを書く
+
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<h1>ページの見出し（タイトル）が入る</h1>
+		<p>ここには赤文字のテキストが入る</p>
+
+	</body>
+
+	<!-- ここにCSS(装飾するコード)を書いていく -->
+	<style>
+		p {
+			color: red;
+		}
+	</style>
+
+</html>
+```
+
+```
+プロパティ名（特性・特質）: 変化させたい値;
+color: blue;
+
+【読み方】 
+「:」 → 「コロン」
+「;」 → 「セミコロン」
+
+#実際の使われ方
+HTMLの要素名 {
+	プロパティ名: 変化させたい値;
+}
+↓
+p {
+	color: blue;
+}
+// HTML内のp要素が青文字になる
+```
+
+##### color - 文字の色を変える
+【読み方】 
+「color」 → 「カラー」
+
+【意味】 
+* 文字の色
+
+* 参考：<a href="http://www.htmq.com/style/color.shtml" target="_blank">http://www.htmq.com/style/color.shtml</a>
+
+```
+プロパティ名（特性・特質）: 変化させたい値;
+color: blue;
+↓
+文字の色: 青にする;
+```
+
+* カラーコード
+	* プログラムで色を宣言するためのコード（それぞれの色にそれぞれのコードがついている）
+		* 黒 - black もしくは #000000
+		* 白 - white もしくは #FFFFFF
+		* 赤 - red もしくは #FF0000
+		* 緑 - green もしくは #00FF00
+		* 青 - blue もしくは #0000FF
+		* 色んな色を指定できる
+			* 参考：<a href="http://hogehoge.tk/webdev/color/" target="_blank">http://hogehoge.tk/webdev/color/</a>
+
+##### background-color - 背景色を変えよう
+
+【読み方】 
+「background-color」 → 「バックグラウンドカラー」
+
+【意味】 
+* 背景色
+
+* 参考：<a href="http://www.htmq.com/style/background-color.shtml" target="_blank">http://www.htmq.com/style/background-color.shtml</a>
+
+```
+プロパティ名（特性・特質）: 変化させたい値;
+background-color: blue;
+↓
+背景色: 青にする;
+
+#実際の使われ方
+p {
+	background-color: blue;
+}
+```
+
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p>赤い背景色</p>
+
+	</body>
+
+	<!-- ここにCSS(装飾するコード)を書いていく -->
+	<style>
+		p {
+			background-color: red;
+		}
+	</style>
+
+</html>
+```
+
+#####複数のプロパティを使う
+
+#「color」プロパティと「background-color」プロパティを一緒に使ってみよう
+
+```
+p {
+	color: red;
+	background-color: blue;
+}
+```
+
+```
+html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
+<html>
+
+	<!-- ページの情報を入力する場所 -->
+	<head>
+		<title>ページのタイトル情報</title>
+	</head>
+
+	<!-- ここからが本文 -->
+	<body>
+
+		<p>赤い文字色と青い背景色</p>
+
+	</body>
+
+	<!-- ここにCSS(装飾するコード)を書いていく -->
+	<style>
+		p {
+			color: red;
+			background-color: blue;
+		}
+	</style>
+
+</html>
+```
 
 ##### 選択した要素が全部変わってしまう
 ```
@@ -43,255 +270,7 @@ html
 
 </html>
 ```
-
 ↑どちらも同じ色になってしまう
 
-#####それぞれのHTML要素に名前を付けてあげる
-
-* HTMLの要素ごとに名前を付けてあげることで名前ごとでCSSを指定出来る
-	* id - アイディー
-		* 「#」 - cssではシャープで表現
-		* 1つのHTML内で1つしか付けれない名前
-	* class - クラス
-		* 「.」 - cssではドットで表現
-		* 1つのHTML内で複数使える名前
-
-```
-
-##使い方
-<h1 id="title">見出し（タイトル）にIDをつけました</h1>
-<p class="red">この文字を赤色にしたい</p>
-<p class="blue">この文字を青色にしたい</p>
-
-
-<style>
-	#title {
-		color: orange;
-	}
-	.red {
-		color: red;
-	}
-	.blue {
-		color: blue;
-	}
-</style>
-```
-
-##今までとの違い
-```
-p {
-	color: red;
-}
-↓
-.red {
-	color: red;
-}
-```
-*「要素」が「class」(「id」)に変わっただけ
-
-
-実際の例
-```
-html
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<h1 id="title">タイトルにIDをつけました</h1>
-		<p class="red">この文字を赤色にしたい</p>
-		<p class="blue">この文字を青色にしたい</p>
-
-	</body>
-
-	<style>
-		#title {
-			color: orange;
-		}
-		.red {
-			color: red;
-		}
-		.blue {
-			color: blue;
-		}
-	</style>
-
-</html>
-```
-
-##### border - 枠を付けよう
-【読み方】 
-「border」 → 「ボーダー」
-
-【意味】
-・枠線
-
-* px - ピクセル単位
-	* 1px(イチピクセル)
-	* 太さを示す
-
-* 線の形状
-	* solid（ソリッド）- 1本線で表示されます。
-	* double（ダブル）- 2本線で表示されます。
-	* dashed（ダッシュ）- 破線で表示されます。
-	* dotted（ドット）- 点線で表示されます。
-
-* 参考：<a href="http://www.htmq.com/style/border.shtml" target="_blank">http://www.htmq.com/style/border.shtml></a>
-
-```
-プロパティ名（特性・特質）: 変化させたい値;
-border: 1px solid blue;
-↓
-枠線: 1ピクセルの1本線を青色にする;
-
-border: 5px dotted red;
-↓
-枠線: 5ピクセルの点線を赤色にする;
-```
-
-```
-html
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<p class="solid">3ピクセルの赤い1本の枠線</p>
-		<p class="double">3ピクセルの青い2本の枠線</p>
-		<p class="dashed">3ピクセルの黒い破線の枠線</p>
-		<p class="dotted">3ピクセルのオレンジ色の点線の枠線</p>
-
-	</body>
-
-	<style>
-		.solid {
-			border: 3px solid red;
-		}
-		.double {
-			border: 3px double blue;
-		}
-		.dashed {
-			border: 3px dashed black;
-		}
-		.dotted {
-			border: 3px dotted orange;
-		}
-	</style>
-
-</html>
-```
-
-##### text-align - 文字を寄せよう
-
-【読み方】 
-「text-align」 → 「テキストアライン」
-
-【意味】
-・文字の寄せ方
-
-* 値の種類
-	* left - 左に寄せる
-	* right - 右に寄せる
-	* center - 中央に寄せる
-
-* 参考：<a href="http://www.htmq.com/style/text-align.shtml" target="_blank">http://www.htmq.com/style/text-align.shtml</a>
-
-```
-プロパティ名（特性・特質）: 変化させたい値;
-text-align: center;
-↓
-文字の寄せ方を: 中央に寄せる;
-
-text-align: right;
-↓
-文字の寄せ方を: 右に寄せる;
-```
-
-```
-html
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<p class="left">左寄せの文字</p>
-		<p class="center">真ん中の文字</p>
-		<p class="right">右寄せの文字</p>
-
-	</body>
-
-	<style>
-		.left {
-			text-align: left;
-		}
-		.center {
-			text-align: center;
-		}
-		.right {
-			text-align: right;
-		}
-	</style>
-
-</html>
-```
-
-
-####HTMLに画像を表示しよう
-	* img - イメージ要素（タグ）
-		* 画像を表示できる
-		* src : 画像のファイル名
-		* alt : 画像の説明（必ず入れる必要はない）
-		* 閉じタグがない
-
-```
-html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
-<!DOCTYPE html>　
-<html>
-
-	<!-- ページの情報を入力する場所 -->
-	<head>
-		<title>ページのタイトル情報</title>
-	</head>
-
-	<!-- ここからが本文 -->
-	<body>
-
-		<img src="（画像のファイル名）" alt="（画像の説明）">
-
-	</body>
-
-</html>
-```
-
-* 実際の例
-	* りんごの画像を「apple.jpg」というファイル名でダウンロードした場合
-	<img src="apple.jpg" alt="りんご">
-
-
-#####ダウンロードの仕方
-* 使いたい画像があったら右クリック
-	* Windowsの人
-		*「名前を付けて保存」をクリック
-	* Macの人
-		*「画像を保存」をクリック
-	* ファイル名を付けて、index.htmlと同じ階層（場所）に保存
+##これをどうやって解決しよう？
 
