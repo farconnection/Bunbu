@@ -176,25 +176,26 @@ style.css
 <br>
 
 ####フォントをより装飾しよう
-* font-size
-	* フォントの大きさ
-* font-family
+* font-size（フォントサイズ）
+	* フォントの大きさを指定する
+	* 単位はpx
+* font-family（フォントファミリー）
 	* フォントの種類 
-		* sans-serif - ゴシック系のフォント
-		* serif - 明朝系のフォント
-		* cursive - 筆記体・草書体のフォント
-		* fantasy - 装飾的なフォント
-		* monospace - 等幅フォント
-* font-weight
-	* フォントの太さ
-		* normal - 標準の太さ
-		* bold - 太字
-		* lighter - 相対的に一段階細くする。
-		* bolder - 相対的に一段階太くする。
-* text-shadow
+		* sans-serif（サンセリフ） - ゴシック系のフォント
+		* serif（セリフ） - 明朝系（みんちょうけい）のフォント
+		* cursive（カーシブ） - 筆記体（ひっきたい）・草書体のフォント
+		* fantasy（ファンタジー） - 装飾的（そうしょくてき）なフォント
+		* monospace（モノスペース） - 等幅フォント
+* font-weight（フォントウェイト）
+	* フォントの太さを指定する
+		* normal（ノーマル） - 標準の太さ
+		* bold（ボールド）- 太字
+		* lighter（ライター） - 相対的に一段階細くする。
+		* bolder（ボールダー） - 相対的に一段階太くする。
+* text-shadow（テキストシャドウ）
 	* フォントに影をつける
 	* text-shadow: 横軸 縦軸 ぼかし具合 ぼかす色;
-	* text-shadow: 1px 1px 10px #000;
+	* text-shadow: 1px 1px 10px red;
 
 
 ```
@@ -224,10 +225,10 @@ html
 style.css
 
 .bg_black {
-	font-family: 20px;
+	font-family: serif;
 	font-size: 20px;
-	font-weight: 20px;
-	text-shadow: 1px 1px 10px #000;
+	font-weight: bold;
+	text-shadow: 1px 1px 10px red;
 }
 
 ```
