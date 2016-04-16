@@ -7,8 +7,10 @@
 		* 右クリック - パッドの右下を押す
 		* ダブルクリック - 左クリックを素早く２回押す
 	* 基本的に「クリック」と言われたら左クリックのことを指す
+
 * スクロール操作
 	* 軽く二本指でパッドに触れて上下に動かしてみよう
+
 * 画面（ウィンドウ）操作
 	* 画面（ウィンドウ）を動かす
 		* 画面（ウィンドウ）の上部をクリックしたまま動かしてみよう
@@ -23,16 +25,42 @@
 	* 画面（ウィンドウ）を閉じる
 		* 画面（ウィンドウ）の右上にある「×」ボタンをクリックする
 
+* ドラッグ&ドロップ操作
+	* クリックをしたまま移動させる
+	* UFOキャッチャーしたことあるかな？
+
+####デスクトップにメモ帳のショートカットを置こう
+##デスクトップ - パソコンを開いたときに一番最初に見える画面
+* 左下のスタートボタンをクリックする
+* 「全てのプログラム」をクリックする
+* 「アクセサリー」をクリックする
+* 「メモ帳」をデスクトップにドラッグ&ドロップする
+* デスクトップにメモ帳のショートカットが作られる
+* これでデスクトップからすぐにメモ帳を開くことができる
+
+####メモ帳を操作しよう
+* メモ帳を開く
+	* デスクトップに置いたメモ帳をクリックする
+* 文字を入力する
+	* 「半角」ボタンをクリックして日本語入力に変える
+	* 「あいうえお」と書いてみよう
+	* 文字の下に波線があるときに「スペース」キーを押すと、変換することができる
+	* 「スペース」キーを押すとスペースができ「enter」キーで改行することができる
+
+* メモ帳をデスクトップに保存する
+	*　「Ctrl」キーを押しながら「S」を押すと何かでてくる
+	* 左の枠から「デスクトップ」を探してクリックする
+	* 「タイピング練習.txt」に変更し「保存」をクリックする
+
 ####タイピングをできるようになろう！
 * ローマ字表
-	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
+	* http://happylilac.net/roman-hyo3.pdf
 * ホームポジション
-	* <a href="http://typing.twi1.me/training/basic" target="_blank">http://typing.twi1.me/training/basic</a>
+	* http://typing.twi1.me/training/basic
 * タイピング
-	* <a href="http://kids.nifty.com/cs/game/detail/91125000012/1.htm" target="_blank">http://kids.nifty.com/cs/game/detail/91125000012/1.htm</a>
+	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
 
 ---
-
 
 ###ウェブサイトを作るのに必要なもの
 * プロのエンジニア達が使っているツールと同じものを用意
@@ -44,8 +72,7 @@
 	* テキストエディタ
 		* プログラミングをするために文字を書き、保存するもの
 			* テキストファイルを作成、編集、保存するためのソフトウェア
-		* Atom
-		* <a href="http://aoplanning.com/ide/atom-install.html" target="_blank">http://aoplanning.com/ide/atom-install.html<a>
+		* Atom　http://aoplanning.com/ide/atom-install.html
 
 ##このサイトをお気に入りに登録
 * https://github.com/farconnection/Bunbu
