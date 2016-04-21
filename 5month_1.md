@@ -2,11 +2,11 @@
 
 ####タイピングをできるようになろう！
 * ローマ字表
-	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
+	* http://happylilac.net/roman-hyo3.pdf
 * ホームポジション
-	* <a href="http://typing.twi1.me/training/basic" target="_blank">http://typing.twi1.me/training/basic</a>
+	* http://typing.twi1.me/training/basic
 * タイピング
-	* <a href="http://kids.nifty.com/cs/game/detail/91125000012/1.htm" target="_blank">http://kids.nifty.com/cs/game/detail/91125000012/1.htm</a>
+	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
 
 ##実際に作ってみよう
 
