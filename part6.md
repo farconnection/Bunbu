@@ -1,3 +1,5 @@
+#パート６
+
 ####タイピングをできるようになろう！
 * ローマ字表
 	* <a href="http://happylilac.net/roman-hyo3.pdf" target="_blank">http://happylilac.net/roman-hyo3.pdf</a>
