@@ -1,13 +1,5 @@
 #パート４
 
-####タイピングをできるようになろう！
-* ローマ字表
-	* http://happylilac.net/roman-hyo3.pdf
-* ホームポジション
-	* http://typing.twi1.me/training/basic
-* タイピング
-	* http://kids.nifty.com/cs/game/detail/91125000012/1.htm
-
 ##実際に作ってみよう
 
 ####必要な知識
