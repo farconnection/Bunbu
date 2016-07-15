@@ -22,11 +22,27 @@
 ```html
 <!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+	</body>
+</html>
+```
+
+```html
+<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
+<!DOCTYPE html>　
 <html>
 
 	<!-- ページの情報を入力する場所 -->
 	<head>
 		<title>ページのタイトル情報</title>
+		<meta charset="utf-8"> // 文字化けをしないように
 	</head>
 
 	<!-- ここからが本文 -->
@@ -47,6 +63,11 @@
 * HTML構造
 	* DOCTYPE
 		* このファイルの宣言をする
+	* `<html lang="ja">` - 日本語で書きますという宣言をする
+		* lang - language（言語）の略
+		* ja - japan（日本）の略
+	* `<meta charset="utf-8">` - 文字化けをしないように文字コードを設定する
+		* utf-8 - ユーティーエフエイトと読む
 	* `<head>` - 頭（ヘッド）のことでこのページの情報などを入れる
 		* 画面には表示はされない（目に見えない）
 	* `<body>` - 体（ボディ）のことで実際に表示したい（見せたい）ものを書く
