@@ -24,7 +24,6 @@
 #####html要素
 
 ```html
-<!-- DOCTYPE宣言 - 「このファイルはhtmlですよ」と宣言する -->
 <!DOCTYPE html>　
 <html lang="ja">
 	<head>
