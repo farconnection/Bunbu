@@ -4,7 +4,7 @@
 ##お問い合わせフォームを作ってみよう
 
 
-![お問い合わせ](https://github.com/farconnection/Bunbu/blob/master/senior_class/part1.md/part1_1.png)
+![お問い合わせ](https://github.com/farconnection/Bunbu/blob/master/senior_class/part1_1.png?raw=true)
 
 
 * ``` <input>```要素は一行入力できるテキストのボックスです。終了タグが不要。
