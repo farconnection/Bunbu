@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Positionの例</title>
+  </head>
+
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    .oya {
+      position: relative;
+      width: 500px;
+      height: 100px;
+      background: salmon;
+    }
+
+    span {
+      color: slateblue;
+    }
+
+    .sample1 {
+      position: static;
+    }
+
+    .sample2 {
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+
+    .sample3 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .sample4 {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+
+  <body>
+    <p class="oya">
+      position:staticの場合<span class="sample1">staticの場合</span>
+    </p>
+
+    <p class="oya">
+      position:relativeの場合<span class="sample2">relativeの場合</span>
+    </p>
+
+    <p class="oya">
+      position:absoluteの場合<span class="sample3">absoluteの場合</span>
+    </p>
+
+    <p class="oya">
+      position:fixedの場合<span class="sample4">fixedの場合</span>
+    </p>
+  </body>
+</html>
